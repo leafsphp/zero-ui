@@ -1,0 +1,32 @@
+{
+    "name": "leafs/zero",
+    "description": "Beautiful UI components crafted with Alpine, Leaf and Tailwind",
+    "keywords": [
+        "ui",
+        "frontend",
+        "css",
+        "tailwind",
+        "alpine"
+    ],
+    "homepage": "https://zero.leafphp.dev/",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Michael Darko",
+            "email": "mickdd22@gmail.com",
+            "homepage": "https://mychi.netlify.app",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Zero\\": "src"
+        },
+        "files": [
+            "src/functions.php"
+        ]
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
