@@ -1,32 +1,33 @@
 {
-    "name": "leafs/zero",
-    "description": "Beautiful UI components crafted with Alpine, Leaf and Tailwind",
-    "keywords": [
-        "ui",
-        "frontend",
-        "css",
-        "tailwind",
-        "alpine"
-    ],
-    "homepage": "https://zero.leafphp.dev/",
-    "type": "library",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Michael Darko",
-            "email": "mickdd22@gmail.com",
-            "homepage": "https://mychi.netlify.app",
-            "role": "Developer"
-        }
-    ],
-    "autoload": {
-        "psr-4": {
-            "Zero\\": "src"
-        },
-        "files": [
-            "src/functions.php"
-        ]
+  "name": "leafs/zero",
+  "description": "Beautiful UI components crafted with Alpine, Leaf and Tailwind",
+  "keywords": [
+    "ui",
+    "frontend",
+    "css",
+    "tailwind",
+    "alpine"
+  ],
+  "homepage": "https://zero.leafphp.dev/",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Michael Darko",
+      "email": "mickdd22@gmail.com",
+      "homepage": "https://mychi.netlify.app",
+      "role": "Developer"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Zero\\": "src"
     },
-    "minimum-stability": "stable",
-    "prefer-stable": true
+    "files": [
+      "src/functions.php",
+      "src/components/Button.php"
+    ]
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
 }
