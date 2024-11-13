@@ -4,6 +4,7 @@ use Zero\Core;
 
 function Button(array $props)
 {
+  $children = [];
   $as = $props['as'] ?? 'button';
   $props['type'] = $props['type'] ?? 'button';
   $props['data-zero-component'] = 'Button';
@@ -29,6 +30,11 @@ function Button(array $props)
   if ($as === 'a') {
     unset($props['type']);
     unset($props['as']);
+  }
+
+  if (isset($props['text'])) {
+    $children[] = $props['text'];
+    unset($props['text']);
   }
 
   if (isset($props['icon'])) {
