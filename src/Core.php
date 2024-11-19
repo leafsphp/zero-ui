@@ -18,6 +18,33 @@ class Core
 
   protected static $globalMarkup = [];
 
+  protected static $theme = [
+    'primary' => [
+      'default' => 'blue-500',
+      'hover' => 'blue-600',
+    ],
+    'secondary' => [
+      'default' => 'gray-500',
+      'hover' => 'gray-600',
+    ],
+    'success' => [
+      'default' => 'green-500',
+      'hover' => 'green-600',
+    ],
+    'danger' => [
+      'default' => 'red-500',
+      'hover' => 'red-600',
+    ],
+    'info' => [
+      'default' => 'indigo-500',
+      'hover' => 'indigo-600',
+    ],
+    'warning' => [
+      'default' => 'yellow-500',
+      'hover' => 'yellow-600',
+    ],
+  ];
+
   /**
    * Get zero head imports
    */
@@ -31,6 +58,25 @@ class Core
     $imports
     $styles
     HTML;
+  }
+
+  /**
+   * Create default theme for Zero
+   *
+   * @param array $theme
+   * @return void
+   */
+  public static function createTheme(array $theme)
+  {
+    static::$theme = array_merge(static::$theme, $theme);
+  }
+
+  /**
+   * Get theme
+   */
+  public static function getTheme()
+  {
+    return static::$theme;
   }
 
   /**
@@ -119,14 +165,7 @@ class Core
    */
   public static function mergeStyles(...$styles)
   {
-    $mergedStyles = [];
-
-    foreach ($styles as $style) {
-      $style = explode(' ', $style);
-      $mergedStyles = array_merge($mergedStyles, $style);
-    }
-
-    return implode(' ', $mergedStyles);
+    return \TailwindMerge\TailwindMerge::instance()->merge(...$styles);
   }
 
 
