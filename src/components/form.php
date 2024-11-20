@@ -81,9 +81,7 @@ function Radio(array $props)
   $selected = (string) ($props['selected'] ?? 'null');
   $props['x-data'] = $props['x-data'] ?? "{ selected: '$selected', data: " . json_encode($dataValues) . " }";
 
-  $props['children'] = [
-    isset($props['title']) ? Core::createElement('p', ['class' => 'mb-2 Zero-RadioGroupLabel', 'children' => [$props['title']]]) : null,
-  ];
+  $props['children'] = [];
 
   $props['@keydown.down.stop.prevent'] = "selected = data[(data.indexOf(selected) + 1) % data.length]";
   $props['@keydown.left.stop.prevent'] = "selected = data[(data.indexOf(selected) - 1 + data.length) % data.length]";

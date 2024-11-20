@@ -148,8 +148,7 @@ echo Radio([
 echo Radio([
   'selected' => 'green',
   'name' => 'eye_color',
-  'title' => 'Select your Eye Color',
-  'class' => 'my-8 grid gap-y-5',
+  'class' => 'my-8 grid gap-y-3',
   'children' => [
     ['label' => 'Blue', 'value' => 'blue'],
     [
@@ -163,5 +162,18 @@ echo Radio([
       'value' => 'not_sure',
       'description' => 'I am not sure what my eye color is.',
     ],
+  ],
+]);
+
+echo Container([
+  'class' => 'bg-gray-100 p-4',
+  'children' => [
+    Heading([
+      'as' => 'h1',
+      'text' => 'Hello, World!',
+    ]),
+    Text([
+      'text' => 'This is a paragraph.',
+    ]),
   ],
 ]);

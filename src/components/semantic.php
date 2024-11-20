@@ -4,12 +4,27 @@ use Zero\Core;
 
 function Heading(array $props)
 {
-  //
+  $props['data-zero-component'] = 'Heading';
+  $as = $props['as'] ?? 'p';
+
+  $props['class'] = Core::mergeStyles(
+    'font-bold',
+    $props['class'] ?? ''
+  );
+
+  return Core::createElement($as, $props);
 }
 
 function Text(array $props)
 {
-  //
+  $props['data-zero-component'] = 'Text';
+
+  $props['class'] = Core::mergeStyles(
+    'text-base',
+    $props['class'] ?? ''
+  );
+
+  return Core::createElement('p', $props);
 }
 
 function Icon(array $props)
