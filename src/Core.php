@@ -2,6 +2,8 @@
 
 namespace Zero;
 
+use YieldStudio\TailwindMerge\TailwindMerge;
+
 /**
  * Leaf Zero Core
  * ---
@@ -165,7 +167,7 @@ class Core
    */
   public static function mergeStyles(...$styles)
   {
-    return \TailwindMerge\TailwindMerge::instance()->merge(...$styles);
+    return TailwindMerge::instance()->merge(...$styles);
   }
 
 
