@@ -1,8 +1,8 @@
 # Leaf Zero
 
-Leaf Zero is a carefully crafted group of components, page sections, UI blocks and application scaffold, fully charged with Alpine, Leaf and Tailwind that will get you started on your next big idea in minutes.
+Leaf Zero is a carefully crafted group of components, page sections, UI blocks and application scaffold, fully charged with Alpine, Leaf and Tailwind that will help you build your frontend in no time, leaving you to focus on all the interesting parts of your application.
 
-Zero has free components which are available for download on the [Leaf Zero GitHub repository](https://github.com/leafsphp/zero) and premium components which you can use by subscribing to [Leaf Zero](https://zero.leafphp.com/).
+<!-- Zero has free components which are available for download on the [Leaf Zero GitHub repository](https://github.com/leafsphp/zero) and premium components which you can use by subscribing to [Leaf Zero](https://zero.leafphp.com/). -->
 
 ## UI Components
 
